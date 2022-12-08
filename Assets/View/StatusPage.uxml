@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement style="height: 30%; width: 100%; flex-direction: row;">
+            <ui:VisualElement style="flex-grow: 1; height: 100%; width: 60%;" />
+            <ui:VisualElement class="background" style="flex-grow: 1; height: 100%; width: 40%;">
+                <ui:Button text="Connect" display-tooltip-when-elided="true" name="ConnectionBtn" />
+                <ui:VisualElement style="height: 30%; justify-content: center; align-items: flex-start; flex-direction: row;">
+                    <ui:Label tabindex="-1" text="Status:" display-tooltip-when-elided="true" name="StatusLabel" style="width: 66%; height: 100%; -unity-text-align: middle-center;" />
+                    <ui:VisualElement name="StatusImage" style="flex-grow: 1; width: 34%; height: 100%; background-image: url(&apos;project://database/Assets/Data/Icon/Hypers.gif?fileID=21300000&amp;guid=f21031f444fc8be45a6f546877181dad&amp;type=3#Hypers&apos;);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="background" style="flex-grow: 1; height: 70%; width: 100%;">
+            <ui:ListView selection-type="None" focusable="false" virtualization-method="DynamicHeight" name="LogList" reorder-mode="Animated" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

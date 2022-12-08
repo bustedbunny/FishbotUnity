@@ -1,0 +1,62 @@
+:root {
+    --color-background-border: rgb(145, 145, 145);
+    --color-background-bright: rgb(63, 59, 59);
+    --color-background-dark: rgb(28, 28, 28);
+    --color-text-on-dark: rgb(200, 200, 200);
+    --color-text-on-bright: rgb(15, 15, 15);
+
+    --color-item-dark: rgb(35, 35, 35);
+    --color-item-bright: rgb(50, 50, 50);
+}
+
+.background-header {
+    background-color: var(--color-background-bright);
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-left-color: var(--color-background-border);
+    border-right-color: var(--color-background-border);
+    border-top-color: var(--color-background-border);
+    border-bottom-color: var(--color-background-border);
+}
+
+.background {
+    background-color: var(--color-background-dark);
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-left-color: var(--color-background-border);
+    border-right-color: var(--color-background-border);
+    border-top-color: var(--color-background-border);
+    border-bottom-color: var(--color-background-border);
+}
+
+.unity-text-element {
+    color: var(--color-text-on-dark);
+}
+
+.unity-text-element--inner-input-field-component {
+    color: var(--color-text-on-bright);
+}
+
+.unity-button {
+    background-color: var(--color-background-dark);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(51, 51, 51);
+    border-right-color: rgb(51, 51, 51);
+    border-top-color: rgb(51, 51, 51);
+    border-bottom-color: rgb(51, 51, 51);
+}
+
+.unity-collection-view__item {
+    background-color: var(--color-item-bright)
+}
+
+.unity-collection-view__item--alternative-background {
+    background-color: var(--color-item-dark);
+}
+
