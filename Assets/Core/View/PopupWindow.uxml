@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/View/PopupWindow.uss?fileID=7433441132597879392&amp;guid=3f6528be4fd12944ca9891b5821c97fd&amp;type=3#PopupWindow" />
+    <ui:VisualElement style="flex-grow: 1; background-color: rgb(204, 204, 204); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px;">
+        <ui:VisualElement name="MessageArea" style="width: 100%; height: 70%;">
+            <ui:Label tabindex="-1" text="Error" display-tooltip-when-elided="true" name="Message" style="width: 100%; height: 100%; -unity-text-align: middle-center; white-space: normal;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ButtonsArea" style="background-color: rgba(0, 0, 0, 0); height: 30%; width: 100%; flex-direction: row; align-items: stretch; justify-content: center;">
+            <ui:VisualElement name="BtnContainer1" class="buttonContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Button text="hop hey lala ley. Kek Cheburek" display-tooltip-when-elided="true" class="button" />
+            </ui:VisualElement>
+            <ui:VisualElement name="BtnContainer2" class="buttonContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Button text="tons of text lalala lululu" display-tooltip-when-elided="true" class="button" />
+            </ui:VisualElement>
+            <ui:VisualElement name="BtnContainer3" class="buttonContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Button text="tons of text lalala lululu" display-tooltip-when-elided="true" class="button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

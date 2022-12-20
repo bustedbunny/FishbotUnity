@@ -1,0 +1,8 @@
+.button {
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.buttonContainer {
+    flex-grow: 1;
+}

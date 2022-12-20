@@ -1,81 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4465874f-f759-4e23-b726-3642b83116b6" name="Changes" comment="Initial. Pre-release.">
-      <change afterPath="$PROJECT_DIR$/Assets/Core/Model/Fishing/Database/CountAccessor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Core/Model/Fishing/Database/CountAccessor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Core/Model/Fishing/Database/RandomRecordAccessor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Core/Model/Fishing/Database/RandomRecordAccessor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Core/Presentation/FishList/FishRecordItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Core/Presentation/FishList/FishRecordItem.cs.meta" afterDir="false" />
+    <list default="true" id="4465874f-f759-4e23-b726-3642b83116b6" name="Changes" comment="New database store and fish counting">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FishBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FishBot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FishBot.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FishBot.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Logic.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Logic/JsonFileLoader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Logic/JsonFileLoader.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Logic/PopupLogic.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Logic/PopupLogic.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Logic/Presenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Logic/Presenter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Credentials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Credentials/Settings.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Credentials/Settings.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Credentials/TwitchSettings.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Credentials/TwitchSettings.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Fishing.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Fishing/FishDatabase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Fishing/FishDatabase.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Fishing/FishRecord.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Fishing/FishRecord.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Fishing/FishingController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Fishing/FishingController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Logging.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Logging/Logger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Logging/Logger.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Twitch.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Twitch/ConnectionClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Model/Twitch/ConnectionClient.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presentation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presentation/Common.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presentation/Common/PopupWindow.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presentation/Common/PopupWindow.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presentation/Common/Shell.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presentation/Common/Shell.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presentation/FishList.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presentation/FishList/ListViewBinder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presentation/FishList/ListViewBinder.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presentation/FishListPage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presentation/FishListPage.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presentation/SettingsPage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presentation/SettingsPage.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presentation/StatusPage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Presentation/StatusPage.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes/Dark.tss" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes/Dark.tss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/Default.uss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/Default.uss.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/FishListPage.uxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/FishListPage.uxml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/PopupWindow.uss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/PopupWindow.uss.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/PopupWindow.uxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/PopupWindow.uxml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/Resources/FishListTemplate.uxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/Resources/FishListTemplate.uxml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/SettingsPage.uxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/SettingsPage.uxml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/Shell.uxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/Shell.uxml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/StatusPage.uxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/View/StatusPage.uxml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fishbot.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Fishbot.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +222,7 @@
       <workItem from="1671542736334" duration="3545000" />
       <workItem from="1671548849060" duration="5893000" />
       <workItem from="1671561407183" duration="7763000" />
-      <workItem from="1671569238285" duration="2456000" />
+      <workItem from="1671569238285" duration="3031000" />
     </task>
     <task id="LOCAL-00001" summary="Initial. Pre-release">
       <created>1670491437307</created>
@@ -318,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670494576485</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="New database store and fish counting">
+      <created>1671573200021</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671573200021</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,15 +267,10 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="FILTERS">
+              <option name="COLUMN_ID_WIDTH">
                 <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="145" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="121" />
                 </map>
               </option>
             </State>
@@ -357,7 +286,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial. Pre-release" />
     <MESSAGE value="Initial. Pre-release." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial. Pre-release." />
+    <MESSAGE value="New database store and fish counting" />
+    <option name="LAST_COMMIT_MESSAGE" value="New database store and fish counting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
