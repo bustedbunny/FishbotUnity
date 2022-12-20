@@ -123,6 +123,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &252537826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 252537828}
+  - component: {fileID: 252537827}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &252537827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252537826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc645d54b40e4afc87a51872de8274f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &252537828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252537826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1551180169
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,11 +287,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1797490052}
-  - component: {fileID: 1797490051}
   - component: {fileID: 1797490050}
   - component: {fileID: 1797490053}
   - component: {fileID: 1797490054}
   - component: {fileID: 1797490055}
+  - component: {fileID: 1797490056}
+  - component: {fileID: 1797490057}
+  - component: {fileID: 1797490058}
+  - component: {fileID: 1797490059}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -265,18 +312,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba9b20ffcac3471c92707c7b346186c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1797490051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1797490049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c2abb6d461949a082dae6b381cb873c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1797490052
@@ -330,3 +365,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5ed21a19f649b4b88358aa8c4a9766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1797490056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797490049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb6dad1f148d479191904524fae49b66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dbFilename: FishDatabase.db
+--- !u!114 &1797490057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797490049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c43ae5f2b5f347c0acf349b9cda4f9f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  database: {fileID: 1797490056}
+  autoId: 3
+--- !u!114 &1797490058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797490049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9668bb334e44ea890ac821c7e2722be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1797490059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797490049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb39e978744493fbfc0732eb692bb91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  database: {fileID: 1797490056}
+  autoId: 10
