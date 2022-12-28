@@ -18,7 +18,12 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="ListContainer" style="width: 50%; height: 100%;">
-            <ui:ListView name="ListView" picking-mode="Ignore" show-alternating-row-backgrounds="ContentOnly" style="width: 100%; height: 100%;" />
+            <ui:MultiColumnListView sorting-enabled="true" show-alternating-row-backgrounds="ContentOnly" virtualization-method="DynamicHeight">
+                <ui:Columns>
+                    <ui:Column name="label" title="Label" width="265" sortable="true" />
+                    <ui:Column name="probability" title="%" width="35" sortable="true" />
+                </ui:Columns>
+            </ui:MultiColumnListView>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

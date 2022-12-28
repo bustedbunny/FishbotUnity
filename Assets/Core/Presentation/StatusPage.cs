@@ -1,8 +1,5 @@
-using System;
-using System.Threading;
 using Cysharp.Threading.Tasks;
 using Fishbot.Model.Twitch;
-using UnityEngine;
 using UnityEngine.UIElements;
 using Logger = Fishbot.Model.Logging.Logger;
 using Object = UnityEngine.Object;

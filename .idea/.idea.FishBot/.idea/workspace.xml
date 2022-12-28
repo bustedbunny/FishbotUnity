@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4465874f-f759-4e23-b726-3642b83116b6" name="Changes" comment="New database store and fish counting">
+    <list default="true" id="4465874f-f759-4e23-b726-3642b83116b6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FishBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FishBot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Model/Fishing/FishingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Model/Fishing/FishingController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Presentation/Common/PopupWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Presentation/Common/PopupWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Presentation/FishList.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Presentation/FishList/FishRecordItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Presentation/FishList/FishRecordItem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Presentation/FishListPage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Presentation/FishListPage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Presentation/StatusPage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Presentation/StatusPage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/View/FishListPage.uxml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/View/FishListPage.uxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/View/PopupWindow.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/View/PopupWindow.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/View/PopupWindow.uxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/View/PopupWindow.uxml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/View/SettingsPage.uxml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/View/SettingsPage.uxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes/Dark.tss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes/Dark.tss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes/DarkDefault.uss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes/DarkDefault.uss.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,10 +90,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2c62f5a99353486389ce268a5295ac09169600/dd/67e6d1fa/CollectionViewController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2c62f5a99353486389ce268a5295ac09169600/e2/e6fdf17d/ListView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2c62f5a99353486389ce268a5295ac09169600/f5/effb267f/CollectionVirtualizationController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/469e18a818964f39910fa06bef052d8216a600/2a/0d8b4271/StyleKeyword.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/469e18a818964f39910fa06bef052d8216a600/67/71b838f7/BaseVerticalCollectionView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/469e18a818964f39910fa06bef052d8216a600/78/618f29b1/CollectionViewController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/469e18a818964f39910fa06bef052d8216a600/a1/e6115182/Column.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/469e18a818964f39910fa06bef052d8216a600/bd/54119471/INotifyValueChangedExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/469e18a818964f39910fa06bef052d8216a600/c0/637429bd/VisualElement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/469e18a818964f39910fa06bef052d8216a600/f6/664949b3/StyleLength.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4f3822f50bf44d529558a26e259593c99600/77/8ad00373/WebSocketClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/ae/83a41f03/IList.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7e91c7d737f04acfa67ccef9a61afddb10fc00/d1/d4e55294/ExpressionVisitor.cs" root0="SKIP_HIGHLIGHTING" />
@@ -84,8 +105,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8f06425e63004caf99a79845675f751e46a800/69/133b288d/IList`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8f06425e63004caf99a79845675f751e46a800/99/1c7e51be/IReadOnlyList`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8f06425e63004caf99a79845675f751e46a800/ea/03d2f8a4/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b02c823a85af435485435f3de5c78bce14400/2c/b6f7d6dc/BanUserExt.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b02c823a85af435485435f3de5c78bce14400/5d/4fb57437/ClientNotInitializedException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b02c823a85af435485435f3de5c78bce14400/71/53ab8273/TwitchClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bdd20210bb844b2e88e1149ea99da5ef16c200/08/5f0c770c/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c72f65590e21400ab1120f66290f826417c00/88/464eeba1/ConnectionCredentials.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ff6da384701f4e208711b926ede71fecc400/02/bb549484/UnityWebRequest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ff6da384701f4e208711b926ede71fecc400/6c/797744f9/UnityWebRequestAsyncOperation.cs" root0="SKIP_HIGHLIGHTING" />
@@ -165,10 +188,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="15316">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="15316" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -222,7 +245,13 @@
       <workItem from="1671542736334" duration="3545000" />
       <workItem from="1671548849060" duration="5893000" />
       <workItem from="1671561407183" duration="7763000" />
-      <workItem from="1671569238285" duration="3031000" />
+      <workItem from="1671569238285" duration="3848000" />
+      <workItem from="1671574740780" duration="1000" />
+      <workItem from="1671624369506" duration="1321000" />
+      <workItem from="1671876438186" duration="766000" />
+      <workItem from="1672077957587" duration="686000" />
+      <workItem from="1672169964865" duration="7488000" />
+      <workItem from="1672210691920" duration="891000" />
     </task>
     <task id="LOCAL-00001" summary="Initial. Pre-release">
       <created>1670491437307</created>
@@ -252,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671573200021</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix">
+      <created>1671573780539</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671573780539</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,24 +323,12 @@
     <MESSAGE value="Initial. Pre-release" />
     <MESSAGE value="Initial. Pre-release." />
     <MESSAGE value="New database store and fish counting" />
-    <option name="LAST_COMMIT_MESSAGE" value="New database store and fish counting" />
+    <MESSAGE value="Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Core/Presentation/FishListPage.cs</url>
-          <line>149</line>
-          <properties documentPath="F:\UnityProjects\FishBot\Assets\Core\Presentation\FishListPage.cs" initialLine="149" containingFunctionPresentation="method 'AddRecord'">
-            <startOffsets>
-              <option value="4596" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4617" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Plugins/LiteDB/Client/Mapper/Linq/LinqExpressionVisitor.cs</url>
           <line>379</line>

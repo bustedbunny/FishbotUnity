@@ -1,10 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using Fishbot.Model.Fishing;
 using Fishbot.Model.Fishing.Database;
-using Fishbot.Presentation.FishList;
-using UnityEngine;
 using UnityEngine.UIElements;
 using Logger = Fishbot.Model.Logging.Logger;
 using Object = UnityEngine.Object;
@@ -15,7 +12,7 @@ namespace Fishbot.Presentation
     {
         private readonly RecordsAccessor _records;
 
-        private readonly ListView _list;
+        private readonly MultiColumnListView _treeView;
         private readonly TextField _newRecordField;
         private readonly VisualElement _previewContainer;
         private readonly TextField _previewLabel;
@@ -25,22 +22,76 @@ namespace Fishbot.Presentation
 
         private void UpdateList()
         {
-            _list.itemsSource = _records.Query.ToList();
+            var data = _records.Query.ToList();
+            _treeView.itemsSource = data;
         }
 
         public FishListPage(TemplateContainer view) : base(view)
         {
             _records = Object.FindObjectOfType<RecordsAccessor>();
 
-            _list = view.Q<ListView>();
+            _treeView = view.Q<MultiColumnListView>();
 
 
-            _list.makeItem = () => new FishRecordItem();
-            _list.bindItem = (element, i) =>
+            var labelColumn = _treeView.columns["label"];
+            var probColumn = _treeView.columns["probability"];
+            
+
+            labelColumn.makeCell = static () =>
             {
-                var item = (FishRecordItem)element;
-                var record = (FishRecord)_list.itemsSource[i];
-                item.Record = record;
+                var label = new Label();
+                label.style.whiteSpace = new StyleEnum<WhiteSpace>(WhiteSpace.Normal);
+                return label;
+            };
+            probColumn.makeCell = static () => new Label();
+
+            labelColumn.bindCell = (element, i) =>
+            {
+                var label = (Label)element;
+                var record = (FishRecord)_treeView.itemsSource[i];
+                label.text = record.Label;
+            };
+
+            probColumn.bindCell = (element, i) =>
+            {
+                var label = (Label)element;
+                var record = (FishRecord)_treeView.itemsSource[i];
+                label.text = record.Probability.ToString();
+            };
+
+            _treeView.columnSortingChanged += () =>
+            {
+                var sort = _treeView.sortedColumns;
+
+                foreach (var columnDescription in sort)
+                {
+                    var direction = columnDescription.direction;
+                    var list = (List<FishRecord>)_treeView.itemsSource;
+                    if (columnDescription.column == labelColumn)
+                    {
+                        if (direction == SortDirection.Ascending)
+                        {
+                            list.Sort((x, y) => string.CompareOrdinal(x.Label, y.Label));
+                        }
+                        else
+                        {
+                            list.Sort((x, y) => string.CompareOrdinal(y.Label, x.Label));
+                        }
+                    }
+                    else if (columnDescription.column == probColumn)
+                    {
+                        if (direction == SortDirection.Ascending)
+                        {
+                            list.Sort((x, y) => x.Probability - y.Probability);
+                        }
+                        else
+                        {
+                            list.Sort((x, y) => y.Probability - x.Probability);
+                        }
+                    }
+                }
+
+                _treeView.RefreshItems();
             };
 
             UpdateList();
@@ -63,20 +114,22 @@ namespace Fishbot.Presentation
 
             _previewContainer.visible = false;
 
-            _list.selectionChanged += ChangeSelection;
+            _treeView.selectionChanged += ChangeSelection;
 
             Object.FindObjectOfType<Logger>();
         }
 
+
         private void ChangeSelection(IEnumerable<object> _)
         {
-            if (_list.selectedIndex < 0)
+            var ind = _treeView.selectedIndex;
+            if (ind < 0)
             {
                 _previewContainer.visible = false;
                 return;
             }
 
-            var record = (FishRecord)_list.itemsSource[_list.selectedIndex];
+            var record = (FishRecord)_treeView.itemsSource[ind];
 
             _previewLabel.value = record.Label;
             _previewProbability.value = record.Probability;
@@ -87,7 +140,7 @@ namespace Fishbot.Presentation
 
         private void ChangeMessage(ChangeEvent<string> evt)
         {
-            var record = (FishRecord)_list.selectedItem;
+            var record = (FishRecord)_treeView.selectedItem;
             var shouldUpdate = record.Message != evt.newValue;
 
             if (shouldUpdate)
@@ -105,7 +158,7 @@ namespace Fishbot.Presentation
                 return;
             }
 
-            var record = (FishRecord)_list.selectedItem;
+            var record = (FishRecord)_treeView.selectedItem;
             var shouldUpdate = record.Probability != evt.newValue;
 
             if (shouldUpdate)
@@ -117,24 +170,24 @@ namespace Fishbot.Presentation
 
         private void RemoveRecord(ClickEvent _)
         {
-            var curInd = _list.selectedIndex;
+            var curInd = _treeView.selectedIndex;
 
-            var record = (FishRecord)_list.selectedItem;
+            var record = (FishRecord)_treeView.selectedItem;
 
-            _list.itemsSource.RemoveAt(curInd);
+            _treeView.itemsSource.RemoveAt(curInd);
             _records.Remove(record.ID);
 
 
-            if (_list.itemsSource.Count > curInd)
+            if (_treeView.itemsSource.Count > curInd)
             {
-                _list.SetSelection(curInd);
+                _treeView.SetSelection(curInd);
             }
             else
             {
-                _list.ClearSelection();
+                _treeView.ClearSelection();
             }
 
-            _list.RefreshItems();
+            _treeView.RefreshItems();
             Logger.Message($"Removed record {record.Label}");
         }
 
@@ -146,10 +199,10 @@ namespace Fishbot.Presentation
             }
 
             var record = new FishRecord(_newRecordField.value);
-            _list.itemsSource.Add(record);
+            _treeView.itemsSource.Add(record);
             _records.Add(record);
 
-            _list.RefreshItems();
+            _treeView.RefreshItems();
 
             Logger.Message($"Added record {_newRecordField.value}");
         }

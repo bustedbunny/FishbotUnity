@@ -1,6 +1,7 @@
 using Fishbot.Model.Fishing.Database;
 using Fishbot.Model.Twitch;
 using TwitchLib.Client.Events;
+using TwitchLib.Client.Extensions;
 using UnityEngine;
 using Logger = Fishbot.Model.Logging.Logger;
 
@@ -40,6 +41,7 @@ namespace Fishbot.Model.Fishing
 
                 _countAccessor.AddCount(record.ID, e.ChatMessage.UserId);
             }
+
             // else if (chatMsg == "!count")
             // {
             //     var countMessage = _countAccessor.DisplayCountForUser(e.ChatMessage.UserId);

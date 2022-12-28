@@ -1,5 +1,4 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/View/Default.uss?fileID=7433441132597879392&amp;guid=04392b89985b832428fd4504f45a6d15&amp;type=3#Default" />
     <ui:VisualElement style="flex-grow: 1;">
         <ui:VisualElement style="flex-grow: 1; margin-left: 40px; margin-right: 40px; margin-top: 40px; margin-bottom: 40px;">
             <ui:VisualElement style="flex-grow: 0.2; flex-direction: row;">
